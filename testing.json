@@ -1,0 +1,691 @@
+[{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_to_exist",
+    "kwargs": {
+      "column": "rating",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {},
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_distinct_values_to_be_in_set",
+    "kwargs": {
+      "column": "mapped_range",
+      "value_set": [
+        "$11-30",
+        "$31-60",
+        "Above $61"
+      ],
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "observed_value": [
+      "$11-30",
+      "$31-60",
+      "Above $61"
+    ],
+    "element_count": 21978,
+    "missing_count": 8243,
+    "missing_percent": 37.505687505687504
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_be_in_set",
+    "kwargs": {
+      "column": "is_closed",
+      "value_set": [
+        true,
+        false
+      ],
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 10349,
+    "missing_percent": 47.08799708799709,
+    "unexpected_count": 0,
+    "unexpected_percent": 0.0,
+    "unexpected_percent_total": 0.0,
+    "unexpected_percent_nonmissing": 0.0,
+    "partial_unexpected_list": []
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "year_established",
+      "regex": "\\b\\d{4}\\b",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 14906,
+    "missing_percent": 67.82236782236782,
+    "unexpected_count": 0,
+    "unexpected_percent": 0.0,
+    "unexpected_percent_total": 0.0,
+    "unexpected_percent_nonmissing": 0.0,
+    "partial_unexpected_list": []
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_unique_value_count_to_be_between",
+    "kwargs": {
+      "column": "year_established",
+      "min_value": 1900,
+      "max_value": 2023,
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "observed_value": 150,
+    "element_count": 21978,
+    "missing_count": 14906,
+    "missing_percent": 67.82236782236782
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_be_between",
+    "kwargs": {
+      "column": "rating",
+      "max_value": 10,
+      "min_value": 1,
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 228,
+    "missing_percent": 1.0374010374010374,
+    "unexpected_count": 251,
+    "unexpected_percent": 1.1540229885057471,
+    "unexpected_percent_total": 1.142051142051142,
+    "unexpected_percent_nonmissing": 1.1540229885057471,
+    "partial_unexpected_list": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "operating_hours_sun",
+      "regex": "\\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm](?: , \\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm])*",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 6876,
+    "missing_percent": 31.285831285831282,
+    "unexpected_count": 423,
+    "unexpected_percent": 2.800953516090584,
+    "unexpected_percent_total": 1.9246519246519247,
+    "unexpected_percent_nonmissing": 2.800953516090584,
+    "partial_unexpected_list": [
+      "5:00 PM to 9:30 PM",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "11:00 AM to 2:30 PM , 5:00 PM to 9:30 PM",
+      "11:00 AM to 3:00 PM , 3:00 PM to 10:00 PM",
+      "Open 24 hours",
+      "11:30 AM to 8:30 PM",
+      "Open 24 hours",
+      "Closed",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "10:00 AM to 6:00 PM",
+      "Open 24 hours",
+      "11:00 AM to 9:00 PM",
+      "12:00 PM to 9:00 PM",
+      "5:00 PM to 9:00 PM"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "operating_hours_sat",
+      "regex": "\\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm](?: , \\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm])*",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 5146,
+    "missing_percent": 23.414323414323416,
+    "unexpected_count": 501,
+    "unexpected_percent": 2.976473384030418,
+    "unexpected_percent_total": 2.2795522795522793,
+    "unexpected_percent_nonmissing": 2.976473384030418,
+    "partial_unexpected_list": [
+      "5:00 PM to 9:00 PM",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "5:30 PM to 10:30 PM",
+      "11:00 AM to 3:00 PM , 3:00 PM to 10:00 PM",
+      "5:00 PM to 10:00 PM",
+      "Open 24 hours",
+      "11:30 AM to 9:30 PM",
+      "Open 24 hours",
+      "Closed",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "5:00 PM to 9:00 PM",
+      "11:30 AM to 8:30 PM",
+      "5:30 PM to 10:00 PM"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "operating_hours_fri",
+      "regex": "\\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm](?: , \\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm])*",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 4717,
+    "missing_percent": 21.46237146237146,
+    "unexpected_count": 505,
+    "unexpected_percent": 2.9256705868721395,
+    "unexpected_percent_total": 2.2977522977522975,
+    "unexpected_percent_nonmissing": 2.9256705868721395,
+    "partial_unexpected_list": [
+      "5:00 PM to 9:00 PM",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "11:00 AM to 3:00 PM , 3:00 PM to 10:00 PM",
+      "11:30 AM to 3:00 PM , 5:30 PM to 10:00 PM",
+      "Open 24 hours",
+      "11:30 AM to 9:30 PM",
+      "Open 24 hours",
+      "Closed",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "5:00 PM to 9:00 PM",
+      "Closed",
+      "Closed",
+      "Open 24 hours"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "operating_hours_thu",
+      "regex": "\\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm](?: , \\d{1,2}:\\d{2} [APap][Mm] - \\d{1,2}:\\d{2} [APap][Mm])*",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 4846,
+    "missing_percent": 22.049322049322047,
+    "unexpected_count": 488,
+    "unexpected_percent": 2.848470698108802,
+    "unexpected_percent_total": 2.2204022204022205,
+    "unexpected_percent_nonmissing": 2.848470698108802,
+    "partial_unexpected_list": [
+      "5:00 PM to 9:00 PM",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "11:00 AM to 3:00 PM , 3:00 PM to 10:00 PM",
+      "11:30 AM to 3:00 PM , 5:30 PM to 10:00 PM",
+      "Open 24 hours",
+      "11:30 AM to 8:30 PM",
+      "Open 24 hours",
+      "Closed",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "Open 24 hours",
+      "5:00 PM to 9:00 PM",
+      "11:00 AM to 3:00 PM , 5:00 PM to 9:30 PM",
+      "5:30 PM to 9:00 PM",
+      "Closed"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_be_in_set",
+    "kwargs": {
+      "column": "is_claimed",
+      "value_set": [
+        true,
+        false
+      ],
+      "mostly": true,
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 831,
+    "missing_percent": 3.7810537810537808,
+    "unexpected_count": 0,
+    "unexpected_percent": 0.0,
+    "unexpected_percent_total": 0.0,
+    "unexpected_percent_nonmissing": 0.0,
+    "partial_unexpected_list": []
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "website_url",
+      "regex": "^(https?://)[^\\s/$.?#].[^\\s]*$",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 0,
+    "missing_percent": 0.0,
+    "unexpected_count": 0,
+    "unexpected_percent": 0.0,
+    "unexpected_percent_total": 0.0,
+    "unexpected_percent_nonmissing": 0.0,
+    "partial_unexpected_list": []
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "facebook_link",
+      "regex": "^(https?://)?(www\\.)?facebook\\.com/[A-Za-z0-9_.-]+/?$",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 21719,
+    "missing_percent": 98.82154882154882,
+    "unexpected_count": 44,
+    "unexpected_percent": 16.988416988416986,
+    "unexpected_percent_total": 0.20020020020020018,
+    "unexpected_percent_nonmissing": 16.988416988416986,
+    "partial_unexpected_list": [
+      "https://www.facebook.com/tamarinerestaurant/photos",
+      "https://www.facebook.com/localunion271/?ref=page_internal",
+      "https://www.facebook.com/StacksCampbell/timeline",
+      "https://www.facebook.com/pg/TeskesGermania/about/",
+      "https://www.facebook.com/#!/pages/Santorini-of-Danville/120650854718335",
+      "https://business.facebook.com/SuperDuperBurgersConcord/",
+      "https://www.facebook.com/yangonrestaurant/?rf=1563167883903881",
+      "https://www.facebook.com/TODOSmexican/photos",
+      "https://www.facebook.com/pages/La-Furia-Chalaca/186128288113817",
+      "https://www.facebook.com/thevillagebake/?ref=settings",
+      "https://www.facebook.com/pages/Kaizen-Japanese-Bar-Grill/622200631212726",
+      "https://www.facebook.com/pg/missionbowlingclub/abo",
+      "https://www.facebook.com/pages/category/Italian-Restaurant/Italian-brothers-rest",
+      "https://www.facebook.com/maryspizzashack/?ref=page_internal",
+      "https://www.facebook.com/ExperienceBurma/?ref=br_rs",
+      "https://www.facebook.com/pages/Cable55/464582283969205",
+      "https://www.facebook.com/pg/thepalms95030/",
+      "https://www.facebook.com/pages/Le-Cheval-Restaurant/80016581578",
+      "https://www.facebook.com/pg/cafefigaro89/about/",
+      "https://www.facebook.com/search/top/?q=park%20%26%20howard%20bistro&ref=eyJzaWQi"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "telephone_number",
+      "regex": "^\\(\\d{3}\\) \\d{3}-\\d{4}$",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 349,
+    "missing_percent": 1.587951587951588,
+    "unexpected_count": 727,
+    "unexpected_percent": 3.3612279809515004,
+    "unexpected_percent_total": 3.3078533078533074,
+    "unexpected_percent_nonmissing": 3.3612279809515004,
+    "partial_unexpected_list": [
+      "[]",
+      "415-677-9991-415-677-9993",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "0935 120 9227",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "[]",
+      "['+1(855) 213-2693']"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_values_to_match_regex",
+    "kwargs": {
+      "column": "restaurant_provided_menu_link",
+      "regex": "^(https?://)?(www\\.)?([a-zA-Z0-9-]+)(\\.[a-z]{2,4})(/[a-zA-Z0-9-_.~%]*)*([?][a-zA-Z0-9-_.~%&=]*)?$",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 10710,
+    "missing_percent": 48.730548730548726,
+    "unexpected_count": 2028,
+    "unexpected_percent": 17.99787007454739,
+    "unexpected_percent_total": 9.227409227409227,
+    "unexpected_percent_nonmissing": 17.99787007454739,
+    "partial_unexpected_list": [
+      "http://408-253-2232.atmenu.at/Menu",
+      "https://order.pfchangs.com/store/9911",
+      "http://w.singlepage.com/macarthur-park-restaurant/menu",
+      "https://n.nordstrommedia.com/id/33b14400-12e8-4619-bbcf-e64a2e28ff0d.pdf",
+      "https://static1.squarespace.com/static/5ca7fbff049079736c45228e/t/5f0e0e0081d92f4c449113de/1594756608992/SHABUWAY+SAN+MATEO+DISPOSABLE+MENU+-+DINNER.pdf",
+      "https://static1.squarespace.com/static/558dc9a1e4b067da5f015342/t/5e1f54d59b2f5f1c7d4a9a49/1579111638726/the+whole+menu+GENNAIO+2020.pdf",
+      "http://www.lalanternasanmateo.com/#!dinner/c1alk",
+      "https://qmenu.us/#/spicy-empire-san-mateo",
+      "https://menu.bevri.com/",
+      "https://www.terunpizza.com/home/#menu",
+      "https://www.italicorestaurant.com/home/#menu",
+      "http://www.patiofilipino.com/#!menu",
+      "http://restaurant.bestfood.today/taste-paloalto/",
+      "https://qmenu.us/#/8-sushi-pacifica",
+      "https://order.thanx.com/curryupnow",
+      "http://www.elpirrin.com/#menu",
+      "https://qmenu.us/#/swaad-indian-san-jose/menu/0/details",
+      "https://dinfo.me/onlineorder/#/home/menu/?restid=veghouse",
+      "https://www.mortons.com/location/mortons-the-steakhouse-san-jose-ca/#menus",
+      "https://canelasf.square.site/dine-in-menu"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "_expect_column_values_to_be_of_type__aggregate",
+    "kwargs": {
+      "column": "address",
+      "type_": "object",
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "observed_value": "object_"
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": false,
+  "expectation_config": {
+    "expectation_type": "expect_column_value_lengths_to_be_between",
+    "kwargs": {
+      "column": "subregion",
+      "min_value": 2,
+      "max_value": 3,
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "element_count": 21978,
+    "missing_count": 0,
+    "missing_percent": 0.0,
+    "unexpected_count": 796,
+    "unexpected_percent": 3.621803621803622,
+    "unexpected_percent_total": 3.621803621803622,
+    "unexpected_percent_nonmissing": 3.621803621803622,
+    "partial_unexpected_list": [
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California",
+      "California"
+    ]
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+},
+{
+  "success": true,
+  "expectation_config": {
+    "expectation_type": "expect_column_mean_to_be_between",
+    "kwargs": {
+      "column": "latitude",
+      "min_value": 34,
+      "max_value": 38,
+      "result_format": "BASIC"
+    },
+    "meta": {}
+  },
+  "result": {
+    "observed_value": 37.73743179588679,
+    "element_count": 21978,
+    "missing_count": null,
+    "missing_percent": null
+  },
+  "meta": {},
+  "exception_info": {
+    "raised_exception": false,
+    "exception_traceback": null,
+    "exception_message": null
+  }
+}
+
+
+
+
+
+
+
+]
